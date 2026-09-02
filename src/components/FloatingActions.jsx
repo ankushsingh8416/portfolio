@@ -73,15 +73,7 @@ const FloatingActions = () => {
   }));
 
   return createPortal(
-    <div
-      className="floating-dock-portal"
-      style={{
-        position: "fixed",
-        bottom: "24px",
-        right: "24px",
-        zIndex: 9999,
-      }}
-    >
+    <div className="floating-dock-portal">
       <FloatingDock items={items} />
     </div>,
     document.body

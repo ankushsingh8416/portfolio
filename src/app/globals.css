@@ -308,6 +308,20 @@ header .navbar ul li a:hover {
 }
 /* scroll top ends */
 
+/* floating AI dock — bottom-right on desktop, horizontally centered on mobile */
+.floating-dock-portal {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+}
+@media (max-width: 768px) {
+  .floating-dock-portal {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 /* chatbot section starts */
 #chatbot {
   position: fixed;
