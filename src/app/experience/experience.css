@@ -109,9 +109,11 @@
   font-size: 1.3rem;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .page-experience .experience .content .desc {
   margin-left: 1.5rem;
+  margin-right: 1.5rem;
   padding-bottom: 1rem;
 }
 .page-experience .experience .content .desc h3 {
@@ -121,6 +123,10 @@
 .page-experience .experience .content .desc p {
   font-size: 1.2rem;
   text-transform: none;
+  margin-bottom: 0.8rem;
+}
+.page-experience .experience .content .desc p:last-child {
+  margin-bottom: 0;
 }
 .page-experience .experience .content .desc p b {
   text-transform: none;

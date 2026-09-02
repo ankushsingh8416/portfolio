@@ -43,6 +43,8 @@ html {
 body {
   background: #f7f7f7;
   font-family: var(--font-montserrat), sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 *::selection {
@@ -130,12 +132,19 @@ header .navbar ul li a:hover {
   header .navbar {
     position: fixed;
     top: 6.5rem;
-    right: -120%;
+    right: 0;
     width: 75%;
     height: 100%;
     text-align: left;
     align-items: flex-start;
     background-color: #0e0f31;
+    /* Slide off-screen via transform (not `right`) so the closed drawer
+       doesn't extend the document's scrollable area on mobile — some
+       mobile browsers let a fixed element positioned via a large
+       left/right offset still open up real horizontal scroll/overflow
+       even with overflow-x:hidden on html. */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
   }
   header .navbar ul {
     flex-flow: column;
@@ -166,7 +175,7 @@ header .navbar ul li a:hover {
     transform: rotate(180deg);
   }
   header .navbar.nav-toggle {
-    right: 0;
+    transform: translateX(0);
   }
 }
 /* hamburger icon ends */
@@ -272,6 +281,14 @@ header .navbar ul li a:hover {
   }
   .footer .box-container .box .share a {
     padding: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Clears the fixed scroll-top button and AI icon dock, which otherwise
+     sit on top of the footer's social icons and credit line once the
+     page is scrolled all the way down. */
+  .footer {
+    padding-bottom: 11rem;
   }
 }
 /* footer section ends */

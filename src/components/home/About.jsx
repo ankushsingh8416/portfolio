@@ -178,7 +178,7 @@ export default function About() {
 
           <div className="resumebtn">
             <a
-              href="https://drive.google.com/file/d/113dj_fP6K4JWHnHhd4p9VOWnUo1TcNg_/view"
+              href="https://drive.google.com/file/d/1zF8H2cYUYueWo3KNKNYliq3-jghLXPyk/view"
               target="_blank"
               rel="noreferrer"
               className="btn"
