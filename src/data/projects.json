@@ -1,0 +1,97 @@
+[
+  {
+    "name": "HP Connect",
+    "desc": "Full-stack platform built with Next.js for HP, featuring a Stripe-powered backend for secure payment processing and transaction management.",
+    "image": "hp-connect.png",
+    "category": "FullStack",
+    "links": {
+      "view": "https://www.hpconnect.in/",
+      "code": "https://www.hpconnect.in/"
+    }
+  },
+   {
+    "name": "India Gate Foods",
+    "desc": "UI contributor on the official website for India Gate Basmati Rice, shaping a premium, intuitive interface as part of a 4-person team.",
+    "image": "india-gate-foods.jpg",
+    "category": "FullStack",
+    "links": {
+      "view": "https://www.indiagatefoods.com",
+      "code": "https://www.indiagatefoods.com"
+    }
+  },
+   {
+    "name": "Sabse Pehle Life Insurance",
+    "desc": "Public awareness platform built for the Life Insurance Council, promoting financial protection through life insurance with tools and calculators.",
+    "image": "sabse-pehle-life-insurance.jpg",
+    "category": "FullStack",
+    "links": {
+      "view": "https://sabsepehlelifeinsurance.com/",
+      "code": "https://sabsepehlelifeinsurance.com/"
+    }
+  },
+  {
+    "name": "KareIn",
+    "desc": "Custom Shopify storefront for an adult-care essentials brand, with a guided product finder and a theme optimized for conversions.",
+    "image": "karein.jpg",
+    "category": "FullStack",
+    "links": {
+      "view": "https://karein.in/",
+      "code": "https://karein.in/"
+    }
+  },
+  
+  {
+    "name": "Max Estates",
+    "desc": "Corporate real estate website for Max Estates Limited, showcasing residential and commercial developments across Delhi NCR.",
+    "image": "max-estates.jpg",
+    "category": "FullStack",
+    "links": {
+      "view": "https://maxestates.in/",
+      "code": "https://maxestates.in/"
+    }
+  },
+   {
+    "name": "Mypalmleaf",
+    "desc": "Palm leaf astrology reading service with pilgrimage tour bookings and multilingual support.",
+    "image": "mypalmleaf.jpg",
+    "category": "FullStack",
+    "links": {
+      "view": "http://mypalmleaf.com/",
+      "code": "http://mypalmleaf.com/"
+    }
+  },
+  {
+    "name": "PureRevive",
+    "desc": "Skincare e-commerce brand site for face wash, face masks, and hair care products with category filtering and offers.",
+    "image": "purerevive.jpg",
+    "category": "FullStack",
+    "links": {
+      "view": "https://purerevive.co.in/",
+      "code":"https://purerevive.co.in/"
+    }
+  },
+ 
+ 
+ 
+  {
+    "name": "ResuCraft – AI Resume Builder",
+    "desc": "AI-powered resume builder with Gemini-driven ATS scoring, LangChain-guided mock interviews across 6 personas, and Pinecone-backed vector search — built solo end-to-end.",
+    "image": "resucraft.jpg",
+    "category": "FullStack",
+    "links": {
+      "view": "https://resucarft.vercel.app/",
+      "code": "https://github.com/ankushsingh8416/Resucraft"
+    }
+  },
+
+  {
+    "name": "mcdonald's",
+    "desc": "This Is fully animated McDonald's website using React.js and GSAP ScrollTrigger.",
+    "image": "macdonalds.jpg",
+    "category": "mern",
+    "links": {
+      "view": "https://mcdoanalds.netlify.app/",
+      "code": "https://github.com/ankushsingh8416/mcdonalds"
+    }
+  }
+]

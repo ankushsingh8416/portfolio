@@ -1,0 +1,1000 @@
+/* Home page — scoped under .page-home to avoid bleeding into other routes
+   during client-side navigation (Next.js keeps old route stylesheets mounted). */
+
+.page-home .heading {
+  font-size: 3.5rem;
+  color: rgb(32, 32, 32);
+  font-weight: 800;
+  text-align: center;
+}
+.page-home .heading span {
+  color: rgb(115, 3, 167);
+}
+
+/* hero section starts*/
+.page-home .home {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+}
+.page-home .home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.page-home .home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.page-home .home .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+}
+.page-home .home .image {
+  flex: 1 1 40rem;
+  z-index: 1;
+}
+.page-home .home .image img {
+  width: 70%;
+  margin-left: 6rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.page-home .home .image img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.page-home .home .content h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #002057;
+}
+.page-home .home .content h2 .hero-line {
+  display: block;
+}
+.page-home .home .content h2 .hero-name {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ff7b00;
+}
+.page-home .home .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem 0;
+  text-transform: none;
+}
+.page-home .home .content p span {
+  font-size: 2.5rem;
+  color: rgb(148, 8, 8);
+  font-weight: 600;
+  padding: 1rem 0;
+  text-transform: none;
+}
+.page-home .home .btn {
+  margin-top: 1rem;
+  position: absolute;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
+  transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  font-family: var(--font-montserrat), sans-serif;
+}
+.page-home .home .btn span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+.page-home .home .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.page-home .home .btn:hover {
+  background: #1a047e;
+}
+.page-home .home .btn:hover i {
+  transform: translateX(5px);
+}
+/* social icons start */
+.page-home .socials {
+  position: relative;
+  margin-top: 9rem;
+}
+.page-home .socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.page-home .socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.page-home .social-icons a {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #00d9ff;
+  background-color: #09011b;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  transition: all 0.2s linear;
+}
+.page-home .social-icons a:active,
+.page-home .social-icons a:focus,
+.page-home .social-icons a:hover {
+  color: #fff;
+  background-color: #0685da;
+}
+.page-home .social-icons a.github:hover {
+  background-color: #0e0e0e;
+}
+.page-home .social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.page-home .social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.page-home .social-icons a.dev:hover {
+  background-color: #070707;
+}
+.page-home .social-icons a.instagram:hover {
+  background-color: #ee00da;
+}
+.page-home .social-icons a.whatsapp:hover {
+  color: #fff;
+  background-color: rgb(6, 186, 6);
+}
+/* social icons end */
+
+/* hero media queries starts*/
+@media (max-width: 450px) {
+  .page-home .home .btn {
+    margin: 4rem 0;
+  }
+  .page-home .socials {
+    margin-top: 12rem;
+  }
+  .page-home .home .image img {
+    margin-top: -12rem;
+  }
+  .page-home .home .content p {
+    font-size: 2.2rem;
+  }
+  .page-home .home .content p span {
+    font-size: 2.2rem;
+  }
+  .page-home .home .content h2 {
+    font-size: 3.9rem;
+    font-weight: 800;
+    color: #002057;
+  }
+  .page-home .home .content h2 .hero-name {
+    font-size: 3.9rem;
+  }
+}
+/* hero section end */
+
+/* about section starts */
+.page-home .about {
+  background: rgb(255, 255, 255);
+}
+.page-home .about .row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+.page-home .about .row .image {
+  text-align: center;
+  flex: 0 1 40rem;
+  align-self: flex-start;
+}
+.page-home .about .row .image img {
+  margin: 3rem;
+  width: 36rem;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.page-home .about .row .image img:hover {
+  mix-blend-mode: normal;
+}
+.page-home .about .row .content {
+  flex: 1 1 45rem;
+  padding: 3rem;
+}
+.page-home .about .row .content h3 {
+  color: rgb(27, 27, 27);
+  font-size: 2.5rem;
+}
+.page-home .about .row .content .tag {
+  font-size: 1.4rem;
+  color: #020133;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.page-home .about .row .content p {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 600;
+  text-transform: none;
+}
+.page-home .about .row .content p strong,
+.page-home .about .row .content p em {
+  /* The global `* { text-transform: capitalize }` reset (globals.css) only
+     gets neutralized on the <p> itself, not on inline children — without
+     this, lowercase multi-word bold phrases (e.g. "vector databases") render
+     Title Cased mid-sentence. */
+  text-transform: none;
+}
+.page-home .about .row .content p strong {
+  font-weight: inherit;
+  color: rgb(115, 3, 167);
+}
+.page-home .about .row .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 600;
+}
+.page-home .about .row .content .box-container .box p {
+  text-transform: none;
+}
+.page-home .about .row .content .box-container .box p span {
+  color: #011aff;
+}
+.page-home .resumebtn {
+  margin-top: 6rem;
+}
+.page-home .resumebtn .btn {
+  padding: 1.7rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.3s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: var(--font-montserrat), sans-serif;
+}
+.page-home .resumebtn .btn span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+.page-home .resumebtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.page-home .resumebtn .btn:hover {
+  background: #1a047e;
+}
+.page-home .resumebtn .btn:hover i {
+  transform: translateX(5px);
+}
+/* about media queries starts*/
+@media screen and (max-width: 600px) {
+  .page-home .about .row .image {
+    margin-top: 2rem;
+  }
+  .page-home .about .row .image img {
+    margin: 0 auto;
+    width: 80%;
+    mix-blend-mode: normal;
+  }
+  .page-home .about .row {
+    padding: 0.5rem;
+    margin-bottom: 7rem;
+  }
+  .page-home .about .row .content {
+    padding: 1rem;
+  }
+  .page-home .about .row .content .box-container {
+    gap: 0;
+  }
+}
+/* about section ends */
+
+/* skills section starts */
+.page-home .skills {
+  min-height: 90vh;
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
+}
+.page-home .skills h2 {
+  color: #fff;
+}
+.page-home .skills .heading span {
+  color: rgb(255, 230, 0);
+}
+.page-home .skills .container {
+  background: rgba(0, 0, 22, 0.4);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.page-home .skills .container .row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+.page-home .skills .container .bar {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 22, 0.9);
+  transition: 0.2s;
+}
+.page-home .skills .container .bar:hover {
+  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.page-home .skills .container .bar .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.page-home .skills .container .bar .info i {
+  font-size: 4rem;
+}
+.page-home .skills .container .bar .info img {
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: contain;
+}
+.page-home .skills .container .skills-grid-wrap {
+  position: relative;
+}
+.page-home .skills .container .skills-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 0, 40, 0) 0%,
+    rgba(10, 0, 40, 0.95) 85%
+  );
+  pointer-events: none;
+  border-radius: 0 0 1rem 1rem;
+}
+.page-home .skills .container .skills-more {
+  display: flex;
+  justify-content: center;
+  margin-top: -3.5rem;
+  position: relative;
+}
+.page-home .skills .container .skills-more-btn {
+  padding: 1.2rem 2.6rem;
+  border-radius: 0.5em;
+  transition: 0.3s;
+  color: #2506ad;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+.page-home .skills .container .skills-more-btn:hover {
+  background: #e5e0ff;
+}
+.page-home .skills .container .bar .info span {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--font-montserrat), sans-serif;
+  margin-left: 0.5rem;
+}
+/* skills media queries starts*/
+@media screen and (max-width: 600px) {
+  .page-home .skills .container {
+    padding: 0;
+    margin: 0;
+  }
+  .page-home .skills .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+  .page-home .skills .container {
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+/* skills section ends */
+
+/* education section starts */
+.page-home .education {
+  background: #e5ecfb;
+  min-height: 80vh;
+}
+.page-home .education .qoute {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.page-home .education .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page-home .education .box-container .box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  background: rgb(252, 252, 252);
+}
+.page-home .education .box-container .box:hover {
+  transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+.page-home .education .box-container .box .image {
+  flex: 1 1 20rem;
+  width: 100%;
+}
+.page-home .education .box-container .box img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.page-home .education .box-container .box .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+}
+.page-home .education .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #012970;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 1rem;
+}
+.page-home .education .box-container .box .content p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+.page-home .education h4 {
+  font-size: 2rem;
+  color: rgb(34, 109, 0);
+  text-align: left;
+  margin: 1rem;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 700;
+}
+/* education media queries starts*/
+@media screen and (max-width: 600px) {
+  .page-home .education .box-container .box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .page-home .education .box-container .box .image {
+    width: 100%;
+    height: 25rem;
+  }
+  .page-home .education .box-container .box img {
+    width: 100%;
+  }
+  .page-home .education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 0;
+  }
+  .page-home .education .btns {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+  }
+}
+/* education section ends */
+
+/* work section starts */
+.page-home .work {
+  background: linear-gradient(to bottom, #000031, #00002c);
+}
+.page-home .work h2 {
+  color: #fff;
+  padding: 1rem;
+}
+.page-home .work .heading span {
+  color: rgb(255, 230, 0);
+}
+.page-home .work .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.page-home .work .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+}
+.page-home .work .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.page-home .work .box-container .box .content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  transition: top 0.4s ease;
+}
+.page-home .work .box-container .box .content .tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: #ffd900;
+}
+.page-home .work .box-container .box .content .tag h3 {
+  font-size: 2rem;
+}
+.page-home .work .box-container .box:hover .content {
+  top: 25%;
+}
+.page-home .work .desc {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-home .work .desc p {
+  font-size: 1.5rem;
+}
+.page-home .work .desc .btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+.page-home .work .desc .btns .btn {
+  line-height: 0;
+  display: inline;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgb(12, 12, 12);
+  margin-right: 2rem;
+}
+.page-home .work .desc .btns .btn:hover {
+  background: #310ae0f5;
+}
+.page-home .work .viewall {
+  display: flex;
+  justify-content: center;
+}
+.page-home .work .viewall .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+}
+.page-home .work .viewall .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: var(--font-montserrat), sans-serif;
+}
+.page-home .work .viewall .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.page-home .work .viewall .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.page-home .work .viewall .btn:hover i {
+  transform: translateX(5px);
+}
+/* work section ends */
+
+/* experience section starts */
+.page-home .experience .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-home .experience .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: #020133;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -2;
+}
+.page-home .experience .container {
+  padding: 10px 60px;
+  margin-bottom: 3rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/*circles on timeline*/
+.page-home .experience .container::after {
+  content: "\f0b1";
+  position: absolute;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  right: -21px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 900;
+  color: #02094b;
+  font-family: "Font Awesome 5 Free";
+}
+.page-home .experience .left {
+  left: 0;
+}
+.page-home .experience .right {
+  left: 50%;
+}
+/* arrows pointing right — anchored to sit flush against the content box
+   (tip touching the box edge), leaving the gap on the icon side instead
+   of floating detached from both. */
+.page-home .experience .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 28px;
+  border: medium solid #f68c09;
+  border-width: 10px 0 10px 32px;
+  border-color: transparent transparent transparent #f68c09;
+}
+/* arrows pointing left  */
+.page-home .experience .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 28px;
+  border: medium solid #f68c09;
+  border-width: 10px 32px 10px 0;
+  border-color: transparent #f68c09 transparent transparent;
+}
+.page-home .experience .right::after {
+  left: -21px;
+}
+.page-home .experience .content {
+  background-color: #f68c09;
+  position: relative;
+  border-radius: 16px;
+}
+.page-home .experience .content .tag {
+  font-size: 1.3rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+.page-home .experience .content .desc {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+.page-home .experience .content .desc h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.page-home .experience .content .desc p {
+  font-size: 1.2rem;
+  text-transform: none;
+}
+.page-home .experience .content .desc p b {
+  text-transform: none;
+}
+.page-home .experience .content .tag h2 {
+  text-transform: none;
+}
+/* view all button */
+.page-home .morebtn {
+  display: flex;
+  justify-content: center;
+}
+.page-home .morebtn .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  text-align: center;
+}
+.page-home .morebtn .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: var(--font-montserrat), sans-serif;
+}
+.page-home .morebtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.page-home .morebtn .btn:hover {
+  background: #1a047e;
+}
+.page-home .morebtn .btn:hover i {
+  transform: translateX(5px);
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .page-home .experience {
+    min-height: 80vh;
+  }
+  .page-home .experience .timeline {
+    margin-top: 2rem;
+  }
+  .page-home .experience .timeline::after {
+    left: 31px;
+  }
+  .page-home .experience .container {
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 2rem;
+  }
+  .page-home .experience .container::after {
+    font-size: 1.6rem;
+  }
+  .page-home .experience .container::before {
+    left: 40px;
+    border: medium solid #f68c09;
+    border-width: 10px 40px 10px 0;
+    border-color: transparent #f68c09 transparent transparent;
+  }
+  .page-home .experience .left::after {
+    left: 15px;
+  }
+  .page-home .experience .right::after {
+    left: 15px;
+  }
+  .page-home .experience .right {
+    left: 0%;
+  }
+  .page-home .morebtn {
+    margin-top: 3rem;
+  }
+}
+/* experience section ends */
+
+/* contact section starts */
+.page-home .contact {
+  background: #e5ecfb;
+  min-height: 60vh;
+}
+.page-home .contact .container {
+  max-width: 1050px;
+  width: 100%;
+  background: #fff;
+  border-radius: 1.5rem;
+  margin: 2rem 5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.page-home .contact .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+}
+.page-home .contact .content .image-box {
+  max-width: 60%;
+  margin-left: 4rem;
+}
+.page-home .contact .content .image-box img {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+.page-home .contact .content form {
+  width: 45%;
+  margin-right: 3.5rem;
+}
+.page-home form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-home .form-group .field {
+  height: 50px;
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+.page-home form i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.page-home form .field input,
+.page-home form .message textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 16px 0 48px;
+  font-size: 16px;
+  font-family: var(--font-montserrat), sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 51, 51);
+  background: #e5ecfb;
+}
+.page-home .field input::placeholder,
+.page-home .message textarea::placeholder {
+  color: rgb(51, 51, 51);
+}
+.page-home .field input:focus,
+.page-home .message textarea:focus {
+  padding-left: 47px;
+  border: 2px solid rgb(115, 3, 167);
+}
+.page-home .field input:focus ~ i,
+.page-home .message textarea:focus ~ i {
+  color: rgb(115, 3, 167);
+}
+.page-home form .message {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+.page-home form .message i {
+  top: 25px;
+  font-size: 20px;
+  left: 15px;
+}
+.page-home form .message textarea {
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 12px 20px 0 48px;
+}
+.page-home form .message textarea::-webkit-scrollbar {
+  width: 0px;
+}
+.page-home form .button-area {
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+}
+.page-home .button-area button {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  transition: 0.3s ease;
+  font-family: var(--font-montserrat), sans-serif;
+}
+.page-home .button-area button:hover {
+  background: #421cecf5;
+}
+.page-home .button-area span {
+  font-size: 17px;
+  padding: 1rem;
+  display: none;
+}
+.page-home .button-area button i {
+  position: relative;
+  top: 6px;
+  left: 2px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  color: #fff;
+}
+.page-home .button-area button:hover i {
+  left: 8px;
+}
+/* contact section media queries starts */
+@media (max-width: 900px) {
+  .page-home .contact {
+    min-height: 70vh;
+  }
+  .page-home .contact .container {
+    margin: 3rem 0 2rem 0;
+  }
+  .page-home .contact .container .content {
+    padding: 18px 12px;
+  }
+  .page-home .contact .content .image-box {
+    display: none;
+  }
+  .page-home .contact .content form {
+    width: 100%;
+    margin-right: 2rem;
+  }
+}
+/* contact section ends */

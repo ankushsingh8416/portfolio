@@ -1,0 +1,195 @@
+/* Experience page — scoped under .page-experience */
+
+.page-experience .heading {
+  font-size: 3.5rem;
+  color: rgb(20, 20, 20);
+  font-weight: 800;
+  text-align: center;
+}
+.page-experience .heading span {
+  color: rgb(115, 3, 167);
+}
+
+/* experience section starts */
+.page-experience .experience {
+  margin-top: 5rem;
+}
+.page-experience .experience .quote {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.page-experience .experience .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+.page-experience .experience .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: #020133;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -2;
+}
+.page-experience .experience .container {
+  padding: 10px 60px;
+  margin-bottom: 3rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/*circles on timeline*/
+.page-experience .experience .container::after {
+  content: "\f0b1";
+  position: absolute;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  right: -21px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid #f68c09;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 900;
+  color: #02094b;
+  font-family: "Font Awesome 5 Free";
+}
+.page-experience .experience .left {
+  left: 0;
+}
+.page-experience .experience .right {
+  left: 50%;
+}
+/* arrows pointing right — widened + repositioned to bridge the gap
+   between the timeline icon circle and the box. */
+.page-experience .experience .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 28px;
+  border: medium solid #f68c09;
+  border-width: 10px 0 10px 32px;
+  border-color: transparent transparent transparent #f68c09;
+}
+/* arrows pointing left  */
+.page-experience .experience .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 28px;
+  border: medium solid #f68c09;
+  border-width: 10px 32px 10px 0;
+  border-color: transparent #f68c09 transparent transparent;
+}
+.page-experience .experience .right::after {
+  left: -21px;
+}
+.page-experience .experience .content {
+  background-color: #f68c09;
+  position: relative;
+  border-radius: 16px;
+}
+.page-experience .experience .content .tag {
+  font-size: 1.3rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+.page-experience .experience .content .desc {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+.page-experience .experience .content .desc h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.page-experience .experience .content .desc p {
+  font-size: 1.2rem;
+  text-transform: none;
+}
+.page-experience .experience .content .desc p b {
+  text-transform: none;
+}
+.page-experience .experience .content .tag h2 {
+  text-transform: none;
+}
+/* view all button */
+.page-experience .morebtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.page-experience .morebtn .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  text-align: center;
+}
+.page-experience .morebtn .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: var(--font-montserrat), sans-serif;
+}
+.page-experience .morebtn .btn i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.page-experience .morebtn .btn:hover {
+  background: #1a047e;
+}
+.page-experience .morebtn .btn:hover i {
+  transform: translateX(-8px);
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .page-experience .experience .timeline::after {
+    left: 31px;
+  }
+  .page-experience .experience .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .page-experience .experience .container::before {
+    left: 40px;
+    border: medium solid #f68c09;
+    border-width: 10px 30px 10px 0;
+    border-color: transparent #f68c09 transparent transparent;
+  }
+  .page-experience .experience .left::after {
+    left: 15px;
+  }
+  .page-experience .experience .right::after {
+    left: 15px;
+  }
+  .page-experience .experience .right {
+    left: 0%;
+  }
+  .page-experience .experience .container::after {
+    font-size: 1.6rem;
+  }
+}
+/* experience media queries ends */
+/* experience section ends */

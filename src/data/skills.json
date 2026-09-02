@@ -1,0 +1,194 @@
+[
+  {
+    "name": "AI Agents",
+    "icon": "https://img.icons8.com/color/48/000000/robot.png"
+  },
+  {
+    "name": "RAG",
+    "icon": "https://img.icons8.com/color/48/000000/mind-map.png"
+  },
+  {
+    "name": "Langchain",
+    "icon": "https://img.icons8.com/color/48/000000/chain.png"
+  },
+  {
+    "name": "Gen AI",
+    "icon": "https://img.icons8.com/fluency/48/artificial-intelligence.png"
+  },
+  {
+    "name": "Claude",
+    "icon": "/assets/images/ai/claude.png"
+  },
+  {
+    "name": "OpenAI",
+    "icon": "https://img.icons8.com/color/48/000000/chatgpt.png"
+  },
+  {
+    "name": "Vector DB (Pinecone)",
+    "icon": "https://img.icons8.com/fluency/48/database.png"
+  },
+  {
+    "name": "Qdrant",
+    "icon": "https://cdn.simpleicons.org/qdrant/DC244C"
+  },
+  {
+    "name": "FastAPI",
+    "icon": "https://cdn.simpleicons.org/fastapi/009688"
+  },
+  {
+    "name": "Celery",
+    "icon": "https://img.icons8.com/color/48/000000/celery.png"
+  },
+  {
+    "name": "Go",
+    "icon": "https://img.icons8.com/color/48/000000/golang.png"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "https://img.icons8.com/color/48/000000/typescript.png"
+  },
+  {
+    "name": "NextJS",
+    "icon": "https://img.icons8.com/color/48/000000/nextjs.png"
+  },
+  {
+    "name": "ReactJS",
+    "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+  },
+  {
+    "name": "NodeJS",
+    "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
+  },
+  {
+    "name": "ExpressJS",
+    "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
+  },
+  {
+    "name": "Supabase",
+    "icon": "https://img.icons8.com/color/48/000000/supabase.png"
+  },
+  {
+    "name": "Prisma",
+    "icon": "https://img.icons8.com/color/48/000000/prisma-orm.png"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+  },
+  {
+    "name": "Docker",
+    "icon": "https://img.icons8.com/color/48/000000/docker.png"
+  },
+  {
+    "name": "Redis",
+    "icon": "https://img.icons8.com/color/48/000000/redis.png"
+  },
+  {
+    "name": "Vercel",
+    "icon": "https://img.icons8.com/color/48/000000/vercel.png"
+  },
+  {
+    "name": "TailwindCSS",
+    "icon": "https://img.icons8.com/color/48/000000/tailwind_css.png"
+  },
+  {
+    "name": "Figma",
+    "icon": "https://img.icons8.com/color/48/000000/figma.png"
+  },
+  {
+    "name": "SEO / AEO / GEO",
+    "icon": "https://img.icons8.com/color/48/000000/seo.png"
+  },
+  {
+    "name": "Meta Ads",
+    "icon": "https://img.icons8.com/color/48/000000/meta.png"
+  },
+  {
+    "name": "GSAP",
+    "icon": "/assets/images/skills/gsap.png"
+  },
+  {
+    "name": "Framer Motion",
+    "icon": "https://cdn.simpleicons.org/framer/0055FF"
+  },
+  {
+    "name": "Shadcn UI",
+    "icon": "https://cdn.simpleicons.org/shadcnui/ffffff"
+  },
+  {
+    "name": "Redux",
+    "icon": "https://img.icons8.com/color/48/000000/redux.png"
+  },
+  {
+    "name": "Firebase",
+    "icon": "https://img.icons8.com/color/48/000000/firebase.png"
+  },
+  {
+    "name": "MaterialUI",
+    "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
+  },
+  {
+    "name": "ChakraUI",
+    "icon": "https://img.icons8.com/color/48/000000/chakra-ui.png"
+  },
+  {
+    "name": "Bootstrap",
+    "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+  },
+  {
+    "name": "Sass",
+    "icon": "https://img.icons8.com/color/48/000000/sass.png"
+  },
+  {
+    "name": "HTML5",
+    "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+  },
+  {
+    "name": "CSS3",
+    "icon": "https://img.icons8.com/color/48/000000/css3.png"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+  },
+  {
+    "name": "Netlify",
+    "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+  },
+  {
+    "name": "jQuery",
+    "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
+  },
+  {
+    "name": "Git VCS",
+    "icon": "https://img.icons8.com/color/48/000000/git.png"
+  },
+  {
+    "name": "GitHub",
+    "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+  },
+  {
+    "name": "Shopify",
+    "icon": "https://img.icons8.com/?size=1x&id=uSHYbs6PJfMT&format=png"
+  },
+  {
+    "name": "WordPress",
+    "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
+  },
+  {
+    "name": "Photoshop",
+    "icon": "https://img.icons8.com/color/48/000000/adobe-photoshop.png"
+  },
+  {
+    "name": "Canva",
+    "icon": "https://img.icons8.com/color/48/000000/canva.png"
+  },
+  {
+    "name": "AWS",
+    "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+  }
+]
