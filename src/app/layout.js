@@ -20,6 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={montserrat.variable}>
       <body>
+        <meta
+          name="google-site-verification"
+          content="fCPHqjSiAJrJtF7Jz2y1dTiZo7zgGSTiomQ8b6p1sxk"
+        />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
