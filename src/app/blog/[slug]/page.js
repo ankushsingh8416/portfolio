@@ -1,11 +1,8 @@
 import { notFound } from "next/navigation";
 import "./blog-detail.css";
 import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/lib/blogs";
+import { SITE_URL } from "@/lib/site";
 import BlogDetailView from "@/components/blog/BlogDetailView";
-
-// Falls back to a placeholder — set NEXT_PUBLIC_SITE_URL in production so
-// canonical/schema URLs point at the real deployed domain.
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ankushrajput.com";
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
