@@ -448,7 +448,10 @@
 
 @media screen and (max-width: 900px) {
   .page-blog-detail .post-layout {
-    grid-template-columns: 1fr;
+    /* minmax(0, 1fr), not bare 1fr — a plain 1fr track's implicit
+       min-width:auto lets wide content (the comparison tables) force the
+       column past the viewport width instead of shrinking to fit it. */
+    grid-template-columns: minmax(0, 1fr);
   }
   .page-blog-detail .post-sidebar {
     position: static;
