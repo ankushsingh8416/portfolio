@@ -24,6 +24,8 @@ export default function ScrollTopButton({ target }) {
       aria-label="ScrollTop"
       className={`fas fa-angle-up${active ? " active" : ""}`}
       id="scroll-top"
-    ></a>
+    >
+      <span className="sr-only">Scroll to top</span>
+    </a>
   );
 }

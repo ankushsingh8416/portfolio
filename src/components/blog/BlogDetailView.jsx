@@ -234,6 +234,7 @@ export default function BlogDetailView({ post, related }) {
                   aria-label="Facebook"
                 >
                   <i className="fab fa-facebook-f"></i>
+                  <span className="sr-only">Facebook</span>
                 </a>
                 <a
                   href="https://x.com"
@@ -242,6 +243,7 @@ export default function BlogDetailView({ post, related }) {
                   aria-label="X"
                 >
                   <i className="fab fa-twitter"></i>
+                  <span className="sr-only">X (Twitter)</span>
                 </a>
                 <a
                   href="https://www.linkedin.com"
@@ -250,6 +252,7 @@ export default function BlogDetailView({ post, related }) {
                   aria-label="LinkedIn"
                 >
                   <i className="fab fa-linkedin-in"></i>
+                  <span className="sr-only">LinkedIn</span>
                 </a>
                 <a
                   href="https://www.youtube.com"
@@ -258,6 +261,7 @@ export default function BlogDetailView({ post, related }) {
                   aria-label="YouTube"
                 >
                   <i className="fab fa-youtube"></i>
+                  <span className="sr-only">YouTube</span>
                 </a>
               </div>
             </div>

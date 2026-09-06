@@ -155,12 +155,12 @@ export default function Hero() {
       <div id="particles-js"></div>
 
       <div className="content">
-        <h2>
+        <h1>
           <span className="hero-line">Hi There,</span>
           <span className="hero-line">
             I&apos;m Ankush <span className="hero-name">Rajput</span>
           </span>
-        </h2>
+        </h1>
         <p>
           I am into{" "}
           <TypeAnimation

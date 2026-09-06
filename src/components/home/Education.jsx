@@ -17,9 +17,9 @@ export default function Education() {
 
   return (
     <section className="education" id="education" ref={sectionRef}>
-      <h1 className="heading">
+      <h2 className="heading">
         <i className="fas fa-graduation-cap"></i> My <span>Education</span>
-      </h1>
+      </h2>
 
       <p className="qoute">
         Education is not the learning of facts, but the training of the mind

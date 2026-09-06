@@ -60,39 +60,49 @@ export default function Footer({ variant = "home" }) {
               className="fab fa-linkedin"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            >
+              <span className="sr-only">LinkedIn</span>
+            </a>
             <a
               href={links.github}
               className="fab fa-github"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            >
+              <span className="sr-only">GitHub</span>
+            </a>
             <a
               href={links.email}
               className="fas fa-envelope"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            >
+              <span className="sr-only">Email</span>
+            </a>
             <a
               href={links.twitter}
               className="fab fa-twitter"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            >
+              <span className="sr-only">X (Twitter)</span>
+            </a>
             <a
               href={links.whatsapp}
               className="fab fa-whatsapp"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            >
+              <span className="sr-only">WhatsApp</span>
+            </a>
           </div>
         </div>
       </div>
 
-      <h1 className="credit">
+      <p className="credit">
         Designed with <i className="fa fa-heart pulse"></i> by{" "}
         <a href={links.creditHref}> Ankush Rajput</a>
-      </h1>
+      </p>
     </section>
   );
 }

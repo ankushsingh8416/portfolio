@@ -53,9 +53,9 @@ export default function ProjectsView() {
       <Header variant="sub" active="work" logoText="Jigar" />
 
       <section className="work" id="work">
-        <h2 className="heading">
+        <h1 className="heading">
           <i className="fas fa-laptop-code"></i> Projects <span>Made</span>
-        </h2>
+        </h1>
 
         <div id="filters" className="button-group">
           {FILTERS.map((filter) => (

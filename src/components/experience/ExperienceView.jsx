@@ -40,9 +40,9 @@ export default function ExperienceView() {
       <Header variant="sub" active="experience" />
 
       <section className="experience" id="experience" ref={sectionRef}>
-        <h2 className="heading">
+        <h1 className="heading">
           <i className="fas fa-briefcase"></i> Experience
-        </h2>
+        </h1>
         <div className="quote">
           <span>
             every experience in your life is being orchestrated to teach you
