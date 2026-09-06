@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { id: "education", label: "Education" },
   { id: "work", label: "Work" },
   { id: "experience", label: "Experience" },
+  { id: "blog", label: "Blog", href: "/blog" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -74,7 +75,8 @@ export default function Header({
   }, [variant]);
 
   const isActive = (id) => (variant === "home" ? scrollActive === id : active === id);
-  const hrefFor = (id) => (variant === "home" ? `#${id}` : `/#${id}`);
+  const hrefFor = (item) =>
+    item.href || (variant === "home" ? `#${item.id}` : `/#${item.id}`);
 
   return (
     <header>
@@ -93,7 +95,7 @@ export default function Header({
             <li key={item.id}>
               <a
                 className={isActive(item.id) ? "active" : ""}
-                href={hrefFor(item.id)}
+                href={hrefFor(item)}
               >
                 {item.label}
               </a>

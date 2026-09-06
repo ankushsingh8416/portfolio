@@ -35,6 +35,9 @@ export default function Footer({ variant = "home" }) {
           <a href="#experience">
             <i className="fas fa-chevron-circle-right"></i> experience
           </a>
+          <a href="/blog">
+            <i className="fas fa-chevron-circle-right"></i> blog
+          </a>
         </div>
 
         <div className="box">

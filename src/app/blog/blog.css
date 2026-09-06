@@ -1,0 +1,377 @@
+/* Blog page — scoped under .page-blog */
+
+.page-blog .heading {
+  font-size: 3.2rem;
+  color: rgb(20, 20, 20);
+  font-weight: 800;
+}
+.page-blog .heading span {
+  color: rgb(115, 3, 167);
+}
+
+/* hero section starts */
+.page-blog .blog-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: auto;
+  margin-top: 6.5rem;
+  padding: 7rem 9% 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("/assets/images/blog-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-blog .blog-hero .blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(6rem);
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+.page-blog .blog-hero .blob-a {
+  width: 30rem;
+  height: 30rem;
+  top: -10rem;
+  left: -6rem;
+  background: #7303a7;
+}
+.page-blog .blog-hero .blob-b {
+  width: 26rem;
+  height: 26rem;
+  bottom: -12rem;
+  right: -4rem;
+  background: #ffae00;
+}
+.page-blog .blog-hero .breadcrumb {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2.4rem;
+  font-weight: 500;
+}
+.page-blog .blog-hero .breadcrumb a {
+  color: rgba(255, 255, 255, 0.75);
+}
+.page-blog .blog-hero .breadcrumb a:hover {
+  color: #ffae00;
+}
+.page-blog .blog-hero .breadcrumb i {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.page-blog .blog-hero .breadcrumb span {
+  color: #ffae00;
+}
+.page-blog .blog-hero .eyebrow {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  color: #ffd873;
+  background: rgba(255, 174, 0, 0.1);
+  border: 1px solid rgba(255, 174, 0, 0.35);
+  margin-bottom: 2.2rem;
+}
+.page-blog .blog-hero h1 {
+  position: relative;
+  z-index: 1;
+  max-width: 90rem;
+  font-size: 4.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 1.8rem;
+}
+.page-blog .blog-hero p {
+  position: relative;
+  z-index: 1;
+  max-width: 62rem;
+  font-size: 1.65rem;
+  line-height: 1.7;
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.72);
+}
+/* hero section ends */
+
+/* content section starts */
+.page-blog .blog-content {
+  min-height: auto;
+  padding: 6rem 9% 2rem;
+  background-image: url("/assets/images/blog-body.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-blog .blog-content > * {
+  max-width: 130rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-blog .blog-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.page-blog .blog-section-head.with-filters {
+  margin-top: 6rem;
+}
+.page-blog .blog-section-head .heading i {
+  color: #ffae00;
+  margin-right: 0.6rem;
+}
+.page-blog .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.page-blog .filters .btn {
+  outline: none;
+  padding: 0.9rem 1.8rem;
+  background: #fff;
+  color: rgb(20, 20, 20);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+.page-blog .filters .btn:hover {
+  border-color: #7303a7;
+  color: #7303a7;
+}
+.page-blog .filters .btn.is-checked {
+  background: #02094b;
+  border-color: #02094b;
+  color: #fff;
+}
+
+/* text-only post cards */
+.page-blog .text-post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2.4rem;
+}
+.page-blog .text-post-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 1.4rem;
+  padding: 2.8rem;
+  box-shadow: 0 0.4rem 1.6rem rgba(2, 9, 75, 0.06);
+  border: 1px solid rgba(2, 9, 75, 0.06);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.page-blog .text-post-card:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0 1.6rem 3.2rem rgba(2, 9, 75, 0.14);
+}
+.page-blog .text-post-card .category {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #7303a7;
+  margin-bottom: 1.2rem;
+}
+.page-blog .text-post-card h3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: rgb(20, 20, 20);
+  margin-bottom: 1.2rem;
+  text-transform: none;
+}
+.page-blog .text-post-card p {
+  font-size: 1.4rem;
+  line-height: 1.65;
+  color: #555;
+  text-transform: none;
+  margin-bottom: 1.8rem;
+}
+.page-blog .text-post-card .read-more {
+  margin-top: auto;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #02094b;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.page-blog .text-post-card .read-more i {
+  font-size: 1.1rem;
+  transition: transform 0.25s ease;
+}
+.page-blog .text-post-card:hover .read-more i {
+  transform: translateX(0.4rem);
+}
+
+/* media post cards */
+.page-blog .media-post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.6rem;
+}
+.page-blog .media-post-card {
+  display: block;
+  background: #fff;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 1.6rem rgba(2, 9, 75, 0.08);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.page-blog .media-post-card:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0 2rem 4rem rgba(2, 9, 75, 0.18);
+}
+.page-blog .media-post-card .thumb {
+  position: relative;
+  height: 17rem;
+  overflow: hidden;
+}
+.page-blog .media-post-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.page-blog .media-post-card:hover .thumb img {
+  transform: scale(1.06);
+}
+.page-blog .media-post-card .thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(1, 1, 30, 0);
+  transition: background 0.3s ease;
+}
+.page-blog .media-post-card:hover .thumb::after {
+  background: rgba(1, 1, 30, 0.4);
+}
+.page-blog .media-post-card .thumb-arrow {
+  position: absolute;
+  z-index: 2;
+  top: 1.4rem;
+  right: 1.4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #02094b;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateY(0.6rem) rotate(45deg);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.page-blog .media-post-card:hover .thumb-arrow {
+  opacity: 1;
+  transform: translateY(0) rotate(45deg);
+}
+.page-blog .media-post-body {
+  padding: 2.4rem;
+}
+.page-blog .media-post-body .meta {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #888;
+  text-transform: none;
+  margin-bottom: 1rem;
+}
+.page-blog .media-post-body h3 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: rgb(20, 20, 20);
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+.page-blog .media-post-body p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #555;
+  text-transform: none;
+}
+
+/* back to home button — matches Projects/Experience pages */
+.page-blog .backbtn {
+  display: flex;
+  justify-content: center;
+  margin: 6rem 0 2rem;
+}
+.page-blog .backbtn .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.3s;
+  color: #fff;
+  background: #02094b;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.3);
+  text-align: center;
+}
+.page-blog .backbtn .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: var(--font-montserrat), sans-serif;
+}
+.page-blog .backbtn .btn i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.page-blog .backbtn .btn:hover {
+  background: #1a047e;
+}
+.page-blog .backbtn .btn:hover i {
+  transform: translateX(-8px);
+}
+/* content section ends */
+
+@media screen and (max-width: 768px) {
+  .page-blog .blog-hero h1 {
+    font-size: 3.4rem;
+  }
+  .page-blog .blog-section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .page-blog .blog-hero {
+    padding: 6rem 6% 6rem;
+  }
+  .page-blog .blog-hero h1 {
+    font-size: 2.8rem;
+  }
+  .page-blog .blog-content {
+    padding: 5rem 6% 2rem;
+  }
+  .page-blog .text-post-card,
+  .page-blog .media-post-body {
+    padding: 2rem;
+  }
+}

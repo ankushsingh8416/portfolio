@@ -26,6 +26,15 @@ export const footerVariants = {
     whatsapp: "https://wa.me/919801516770",
     creditHref: "https://www.linkedin.com/in/jigar-sable",
   },
+  blog: {
+    linkedin:
+      "https://www.linkedin.com/in/ankush-kumar-a74797269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    github: "https://github.com/ankushsingh8416?tab=repositories",
+    email: "mailto:ankushsingh8416@gmail.com",
+    twitter: "https://x.com/AnkushRajp48622?t=CmR1IRosS64Cybl7iKbZLA&s=09",
+    whatsapp: "https://wa.me/919801516770",
+    creditHref: "https://www.linkedin.com/in/ankush-kumar-a74797269/",
+  },
   notfound: {
     linkedin: "https://www.linkedin.com/in/ankush-kumar-a74797269/",
     github: "https://github.com/ankushsingh8416?tab=repositories",
