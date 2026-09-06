@@ -6,6 +6,7 @@ import DisableDevTools from "@/components/DisableDevTools";
 
 export const metadata = {
   title: "Got Lost! Page Not Found",
+  description: "The page you're looking for doesn't exist or has moved.",
 };
 
 export default function NotFound() {

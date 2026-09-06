@@ -80,7 +80,7 @@
     "category": "FullStack",
     "links": {
       "view": "https://resucarft.vercel.app/",
-      "code": "https://github.com/ankushsingh8416/Resucraft"
+      "code": "https://resucarft.vercel.app/"
     }
   },
 
@@ -91,7 +91,7 @@
     "category": "mern",
     "links": {
       "view": "https://mcdoanalds.netlify.app/",
-      "code": "https://github.com/ankushsingh8416/mcdonalds"
+      "code": "https://mcdoanalds.netlify.app/"
     }
   }
 ]

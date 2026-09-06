@@ -89,28 +89,32 @@ export default function BlogView() {
       </section>
 
       <section className="blog-content" id="blog" ref={contentRef}>
-        <div className="blog-section-head">
-          <h2 className="heading">
-            Latest <span>Articles</span>
-          </h2>
-        </div>
+        {blogs.textPosts.length > 0 && (
+          <>
+            <div className="blog-section-head">
+              <h2 className="heading">
+                Latest <span>Articles</span>
+              </h2>
+            </div>
 
-        <div className="text-post-grid">
-          {blogs.textPosts.map((post) => (
-            <Link
-              href={`/blog/${post.slug}`}
-              className="text-post-card"
-              key={post.slug}
-            >
-              <span className="category">{post.category}</span>
-              <h3>{post.title}</h3>
-              <p>{post.excerpt}</p>
-              <span className="read-more">
-                Read article <i className="fas fa-arrow-right"></i>
-              </span>
-            </Link>
-          ))}
-        </div>
+            <div className="text-post-grid">
+              {blogs.textPosts.map((post) => (
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="text-post-card"
+                  key={post.slug}
+                >
+                  <span className="category">{post.category}</span>
+                  <h3>{post.title}</h3>
+                  <p>{post.excerpt}</p>
+                  <span className="read-more">
+                    Read article <i className="fas fa-arrow-right"></i>
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
 
         <div className="blog-section-head with-filters">
           <h2 className="heading">

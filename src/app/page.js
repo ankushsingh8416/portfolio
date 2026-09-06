@@ -12,6 +12,12 @@ import Work from "@/components/home/Work";
 import ExperiencePreview from "@/components/home/ExperiencePreview";
 import Contact from "@/components/home/Contact";
 
+export const metadata = {
+  title: "Portfolio | Ankush Rajput",
+  description:
+    "Portfolio of Ankush Rajput, a Full-Stack Engineer & AI Systems Builder architecting AI agents, RAG pipelines, and automation (LangChain, Pinecone, Qdrant, FastAPI) alongside scalable Next.js/Node.js applications, with SEO/AEO/GEO and Meta Ads growth engineering.",
+};
+
 export default function HomePage() {
   return (
     <main className="page-home">
