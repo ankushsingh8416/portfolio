@@ -18,6 +18,38 @@ export default function ArticleBlocks({ blocks }) {
           </ul>
         );
 
+      case "image":
+        return (
+          <figure className="block-image" key={index}>
+            <img
+              src={`/assets/images/${block.src}`}
+              alt={block.alt || ""}
+              draggable="false"
+            />
+            {block.caption && (
+              <figcaption>{renderRichText(block.caption)}</figcaption>
+            )}
+          </figure>
+        );
+
+      case "image-pair":
+        return (
+          <div className="block-image-pair" key={index}>
+            {block.images.map((img, i) => (
+              <figure key={i}>
+                <img
+                  src={`/assets/images/${img.src}`}
+                  alt={img.alt || ""}
+                  draggable="false"
+                />
+                {img.caption && (
+                  <figcaption>{renderRichText(img.caption)}</figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        );
+
       case "table":
         return (
           <div className="block-table-wrap" key={index}>

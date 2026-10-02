@@ -2,6 +2,198 @@
   "textPosts": [],
   "mediaPosts": [
     {
+      "slug": "meta-muse-vs-grok-bot",
+      "category": "AI Agents",
+      "title": "Meta Muse vs Grok Bot: Which AI Agent Should You Use?",
+      "excerpt": "Meta Muse is a free-to-try personal agent for your own life; Grok Bot is a paid, always-on team of agents for work. Here's how they really compare on pricing, benchmarks, and risk.",
+      "date": "2026-10-02",
+      "readTime": "12 min read",
+      "image": "blogs/meta-muse-vs-xai-grok-bot.webp",
+      "tags": ["Meta Muse", "Grok Bot", "SpaceXAI", "AI Agents", "Muse Spark 1.3"],
+      "takeaways": [
+        "Muse and Grok Bot solve different problems: Muse handles personal tasks (shopping, email, calendar) for individuals; Grok Bot coordinates work tasks across a team of named agents.",
+        "On the independent Artificial Analysis Intelligence Index, Muse Spark 1.3 (61) significantly outscores Grok 4.7 (46) — though Grok Bot's pitch is coordination, not raw intelligence.",
+        "Pricing isn't close: Muse has a genuinely free tier (100M tokens/week); Grok Bot requires at least Cursor Teams Premium at $120/seat/month.",
+        "Muse's rollout has been shadowed by real security incidents and an admitted inspiration from the open-source OpenClaw project — worth weighing against its benchmark lead."
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Within about five weeks of each other in September and October 2026, three very different companies shipped the same basic idea: an AI agent that keeps working after you close the app. OpenAI had [dots](/blog/chatgpt-dots-explained), built on [GPT-6 Astra](/blog/gpt-6-astra-vs-claude-fable-5-1). Meta launched Muse on September 8. And on August 11, SpaceXAI — the company formed around xAI's Grok and Cursor's parent, Anysphere — shipped the beta of Grok Bot. Muse and Grok Bot are the most directly comparable of the three: both are marketed as \"always-on\" agents, but they're built for close to opposite jobs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Quick verdict: this isn't close on price, and it isn't close on the one independent benchmark both products share — but it's also not really a fair fight. Muse is a consumer product for your own errands; Grok Bot is a paid work tool with a different buyer and a different job to do. Which one is \"better\" depends entirely on which job you're hiring it for."
+        },
+        { "type": "heading", "text": "Meta Muse vs Grok Bot at a Glance" },
+        {
+          "type": "table",
+          "headers": ["", "Meta Muse", "Grok Bot"],
+          "rows": [
+            ["Developer", "Meta", "SpaceXAI + Cursor (Anysphere)"],
+            ["Launched", "Sept 8, 2026", "Aug 11, 2026 (beta)"],
+            ["Model", "Muse Spark 1.3", "Grok 4.7"],
+            ["Architecture", "Single \"Chief of Staff\" agent + separate Sentinel watchdog", "Team of named agents sharing one cloud computer"],
+            ["Built for", "Individuals — personal life tasks", "Teams — work tasks"],
+            ["Platforms", "iOS, Android, web, WhatsApp (smart glasses planned)", "macOS, Windows, iPhone (iOS 18+)"],
+            ["Entry price", "Free — 100M tokens/week", "$120/seat/month (Cursor Teams Premium)"],
+            ["Availability", "US only, ages 18+", "Global, beta, paid subscribers only"]
+          ],
+          "caption": "Compiled from Meta's and SpaceXAI's own announcements and independent coverage as of October 2, 2026 — pricing and availability may change."
+        },
+        { "type": "heading", "text": "What Is Meta Muse?" },
+        {
+          "type": "paragraph",
+          "text": "Muse is Meta's personal AI agent, built around a \"Chief of Staff\" architecture: one primary agent handles your requests, backed by a separate Sentinel agent that watches over its actions. Each user gets a dedicated cloud machine — Meta calls it a Secure VM — and the agent can connect to at least six categories of your digital life: email, calendar, payments, health, shopping, and smart home. It opens a browser, fills out forms, and negotiates on your behalf, and keeps working after you close the app."
+        },
+        {
+          "type": "paragraph",
+          "text": "It's available as a standalone app on iOS and Android, on the web, and through WhatsApp, with smart-glasses integration planned. Muse runs on Meta's own [Muse Spark 1.3](https://artificialanalysis.ai/articles/muse-spark-1-3) model, and launched to a genuinely large audience: it hit #1 on Apple's free app chart within 10 days and crossed 2.5 million US downloads by October."
+        },
+        {
+          "type": "image-pair",
+          "images": [
+            {
+              "src": "blogs/meta-muse-browser-overview.webp",
+              "alt": "Meta Muse chat showing it booking movie tickets and opening a browser to select seats",
+              "caption": "Muse proactively flagging ticket availability, then opening a browser to pick seats."
+            },
+            {
+              "src": "blogs/meta-muse-messaging.webp",
+              "alt": "Meta Muse filling out a field trip permission slip PDF from an email, inside WhatsApp",
+              "caption": "Muse filling out a permission-slip PDF from an email, reachable right inside WhatsApp."
+            }
+          ]
+        },
+        { "type": "heading", "text": "What Is Grok Bot?" },
+        {
+          "type": "paragraph",
+          "text": "Grok Bot takes the opposite shape: instead of one agent with a personality, you get a team of named agents sharing a single cloud computer, coordinating with each other and with you through group chat and @ mentions. Each Bot signs into the tools your team already uses, works across inboxes and software, and only surfaces when it needs approval. It's built by SpaceXAI, the entity formed after SpaceX's $60 billion all-stock deal for Cursor's parent company, Anysphere — agreed in June 2026 and expected to close in Q3 — which is why a Grok model is showing up inside what's fundamentally a Cursor product."
+        },
+        {
+          "type": "paragraph",
+          "text": "Grok Bot runs on [Grok 4.7](https://artificialanalysis.ai/models/grok-4-7) and, as of its August 11 beta, is available on macOS, Windows, and iPhones running iOS 18 or later, strictly for paying subscribers."
+        },
+        { "type": "heading", "text": "Pricing Compared" },
+        {
+          "type": "paragraph",
+          "text": "Grok Bot access is easy to misprice if you're only looking at Cursor's base subscription — the $20/month Cursor Pro and $30/month SuperGrok tiers do not include it. Access to Grok Bot specifically starts at Cursor Teams Premium ($120 per seat, per month), with Cursor Ultra ($200/month) and SuperGrok Heavy as the other paths in. Muse, by contrast, has a real free tier: up to 100 million tokens a week at no cost — a payment card on file is required, since the agent is built to shop and pay on your behalf — with Power ($20/month, 500M tokens/week) and Maximum ($100/month, 3B tokens/week) above that."
+        },
+        {
+          "type": "table",
+          "headers": ["Plan", "Price", "What You Get"],
+          "rows": [
+            ["Muse — Free", "$0/month", "100M tokens/week (card on file required)"],
+            ["Muse — Power", "$20/month", "500M tokens/week"],
+            ["Muse — Maximum", "$100/month", "3B tokens/week"],
+            ["Grok Bot — Cursor Teams Premium", "$120/seat/month", "Entry-level access to Grok Bot"],
+            ["Grok Bot — Cursor Ultra", "$200/month", "Higher-tier access"],
+            ["Grok Bot — SuperGrok Heavy", "Not fully disclosed", "Additional access path via xAI's consumer tier"]
+          ]
+        },
+        { "type": "heading", "text": "Benchmarks: Independent Scores" },
+        {
+          "type": "table",
+          "headers": ["Benchmark", "Muse Spark 1.3", "Grok 4.7", "Source"],
+          "rows": [
+            ["AA Intelligence Index", "61 (xhigh) · 62 (max, limited partner preview)", "46 (xhigh)", "Independent — Artificial Analysis"],
+            ["AA Coding Agent Index", "64 (xhigh) · 68 (max)", "56 (xhigh)", "Independent — Artificial Analysis"],
+            ["Tau3-Bench Banking", "47% (xhigh) · 52% (max) — #1 among all models", "Not disclosed", "Vendor-reported (Meta)"],
+            ["GDPval-AA v2 Elo", "1,709 (xhigh) · 1,754 (max)", "Not disclosed", "Vendor-reported (Meta)"]
+          ],
+          "caption": "Muse Spark 1.3 \"max\" is in limited preview for Meta's partners only — most Muse users today get the \"xhigh\" numbers. Grok Bot doesn't ship its own task-specific benchmark suite the way Meta does, so the comparison is strongest on the shared Artificial Analysis indices and thinner everywhere else."
+        },
+        {
+          "type": "paragraph",
+          "text": "On the one standardized, independent measure both models sit on — Artificial Analysis' Intelligence Index — Muse Spark 1.3 beats Grok 4.7 by a wide margin (61 vs. 46). That's a real, independently verified gap, not a vendor talking point. It doesn't settle which agent product is better, though: Grok Bot's entire pitch is coordinating a team of agents on scoped work, not winning a general-intelligence leaderboard."
+        },
+        { "type": "heading", "text": "Reception: Adoption, Security Incidents, and the OpenClaw Question" },
+        {
+          "type": "paragraph",
+          "text": "Muse's launch numbers are genuinely large — 500,000 users in its first week, reportedly 600,000 daily users since, and the top spot on Apple's free app chart within 10 days. But the rollout has also drawn real criticism, not just the usual early-access grumbling. Security researchers found Muse synced roughly 187,000 lines from a user's Messages database despite Full Disk Access being switched off, and in one widely shared incident it listed a user's home address on Facebook Marketplace, prompting sellers to show up at their door — criticism Elon Musk amplified publicly. By default, conversations with Muse are also used for model training unless a user manually opts out."
+        },
+        {
+          "type": "paragraph",
+          "text": "Separately, Nat Friedman — the former GitHub CEO now leading product at Meta's Superintelligence Labs — confirmed that Muse was \"heavily inspired\" by OpenClaw, an open-source agent project; a user test reportedly found core files, including one literally named SOUL.md, copied almost verbatim. Meta's position is that Muse was coded from scratch but deliberately modeled on OpenClaw's design. None of this is disqualifying on its own, but it's relevant: a personal agent wired this deeply into your email, payments, and messages is only as trustworthy as its permission handling, and Muse's first month gave real-world reasons to check its settings rather than trust the defaults."
+        },
+        {
+          "type": "paragraph",
+          "text": "Grok Bot, by contrast, has drawn far less public scrutiny so far — partly because it's still in beta, gated behind expensive subscriptions, and pitched at technical teams who are more likely to scope its access deliberately than a consumer installing a free app."
+        },
+        { "type": "heading", "text": "Dots, Muse, and Grok Bot: The Same Idea, Three Different Shapes" },
+        {
+          "type": "paragraph",
+          "text": "Line these up against [OpenAI's dots](/blog/chatgpt-dots-explained) and a pattern shows up fast: three major AI labs independently concluded, within about two months of each other, that the next product layer on top of frontier models is persistence — an agent that keeps a cloud computer running and comes back to you instead of waiting to be asked. OpenAI and Meta both ship a single primary agent aimed at individuals (dots is bundled with a paid plan; Muse has a genuine free tier). Grok Bot is the outlier: built explicitly for teams rather than individuals, and priced like enterprise software rather than a consumer subscription. The model underneath — [GPT-6 Astra](/blog/gpt-6-astra-vs-claude-fable-5-1) for dots, Muse Spark 1.3 for Muse, Grok 4.7 for Grok Bot — matters less here than the packaging decision each company made around it."
+        },
+        { "type": "heading", "text": "Which Should You Use?" },
+        {
+          "type": "paragraph",
+          "text": "If you're an individual who wants an agent to handle shopping, scheduling, and the small digital chores that eat a weekend, Muse's free tier costs nothing to try, and it currently leads on the one independent benchmark both products share. Go in deliberately about permissions, though — review what it can access before connecting your messages or payment methods, given its first month of real security incidents."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you're buying for a team and want multiple coordinated agents working across your existing tools, Grok Bot is the more direct fit — but budget for it like enterprise software, not a personal subscription, since entry pricing starts at $120 per seat per month and there's no free tier."
+        },
+        { "type": "heading", "text": "Related Reading" },
+        {
+          "type": "list",
+          "items": [
+            "[GPT-6 Astra vs Claude Fable 5.1: Which AI Model Is Better?](/blog/gpt-6-astra-vs-claude-fable-5-1) — the model dots is built on, and the other half of this always-on agent wave",
+            "[ChatGPT Dots Explained](/blog/chatgpt-dots-explained) — OpenAI's own always-on agent, for comparison against Muse and Grok Bot"
+          ]
+        },
+        { "type": "heading", "text": "Sources" },
+        {
+          "type": "list",
+          "items": [
+            "[Everything new coming to Meta's AI agent Muse (TechCrunch)](https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/)",
+            "[AI agents promise to do everything for you — there may be a big wrinkle (CNN)](https://www.cnn.com/2026/09/28/tech/meta-muse-ai-agents-amazon)",
+            "[Meta's Muse AI Agent tests who controls digital distribution (Forbes)](https://www.forbes.com/sites/maureenkerr/2026/09/27/metas-muse-ai-agent-tests-who-controls-digital-distribution/)",
+            "[Muse Spark 1.3: Meta reaches the frontier (Artificial Analysis)](https://artificialanalysis.ai/articles/muse-spark-1-3)",
+            "[Grok 4.7 — Intelligence, Performance & Price Analysis (Artificial Analysis)](https://artificialanalysis.ai/models/grok-4-7)",
+            "[SpaceXAI launches Grok Bot as the agent race moves to office work (TheNextWeb)](https://thenextweb.com/news/spacexai-grok-bot-ai-agents-cursor)",
+            "[SpaceXAI Grok Bot starts at $120 a seat (implicator.ai)](https://www.implicator.ai/spacexai-grok-bot-starts-at-120-a-seat/)",
+            "[Meta's AI agent Muse draws 500,000 users in a week along with claims it copied OpenClaw (The Decoder)](https://the-decoder.com/metas-ai-agent-muse-draws-500000-users-in-a-week-along-with-claims-it-copied-openclaw/)",
+            "[Meta Muse pricing 2026: free tier, token limits, paid plans (eesel.ai)](https://www.eesel.ai/blog/meta-muse-agent-pricing)"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is Meta Muse?",
+          "a": "Muse is Meta's personal AI agent, launched September 8, 2026. It runs on Meta's Muse Spark 1.3 model, gets its own cloud computer, and can handle email, calendar, payments, health, shopping, and smart-home tasks with minimal supervision."
+        },
+        {
+          "q": "What is Grok Bot?",
+          "a": "Grok Bot is SpaceXAI's always-on agent product, in beta since August 11, 2026. Instead of one agent, you get a team of named agents sharing a cloud computer, built for work tasks and coordinated via group chat."
+        },
+        {
+          "q": "Is Meta Muse free?",
+          "a": "Yes — up to 100 million tokens a week at no cost, though a payment card on file is required since Muse can shop and pay on your behalf. Paid tiers (Power at $20/month, Maximum at $100/month) raise the token allowance."
+        },
+        {
+          "q": "How much does Grok Bot cost?",
+          "a": "There's no free tier. Access starts at Cursor Teams Premium ($120 per seat, per month); Cursor Ultra ($200/month) and SuperGrok Heavy are the other paths in. The base $20/month Cursor Pro and $30/month SuperGrok plans do not include it."
+        },
+        {
+          "q": "Which model scores higher on independent benchmarks?",
+          "a": "Muse Spark 1.3 scores 61 on the Artificial Analysis Intelligence Index versus Grok 4.7's 46 — a significant, independently verified gap. It doesn't necessarily mean Muse is the better agent product for every job, just the stronger underlying model on that index."
+        },
+        {
+          "q": "Is Meta Muse safe to use?",
+          "a": "Its first month surfaced real issues: Muse reportedly synced data from a user's Messages app despite permissions being disabled, and in one case posted a user's home address publicly. Review its permissions deliberately rather than accepting the defaults."
+        },
+        {
+          "q": "Is Grok Bot available outside the US?",
+          "a": "Yes, globally for paid subscribers — unlike Muse, which is currently US-only and restricted to users 18 and older."
+        },
+        {
+          "q": "What is OpenClaw, and why does it matter for Muse?",
+          "a": "OpenClaw is an open-source AI agent project. A Meta product lead confirmed Muse was \"heavily inspired\" by it, and users found core files reportedly copied almost verbatim, even though Meta says Muse was coded from scratch."
+        }
+      ]
+    },
+    {
       "slug": "chatgpt-dots-explained",
       "category": "AI Agents",
       "title": "ChatGPT Dots Explained: OpenAI's Always-On AI Agents",
