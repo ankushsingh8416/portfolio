@@ -2,6 +2,147 @@
   "textPosts": [],
   "mediaPosts": [
     {
+      "slug": "chatgpt-dots-explained",
+      "category": "AI Agents",
+      "title": "ChatGPT Dots Explained: OpenAI's Always-On AI Agents",
+      "excerpt": "OpenAI's dots are always-on agents built on GPT-6 Astra, with their own cloud computer and 4,000+ app connections. Here's what they do, what they cost, and what to watch out for.",
+      "date": "2026-10-02",
+      "readTime": "10 min read",
+      "image": "blogs/chatgpt-dots.webp",
+      "tags": ["ChatGPT Dots", "OpenAI", "GPT-6 Astra", "AI Agents", "DevDay 2026"],
+      "takeaways": [
+        "Dots are always-on agents powered by GPT-6 Astra, with their own cloud computer and browser, and connections to 4,000+ apps.",
+        "The first dot is free with ChatGPT Pro or Business Premium — but pricing for additional dots hasn't been published yet.",
+        "You can't currently view, edit, or delete an individual dot's memories — only deleting the whole dot resets it.",
+        "No independent benchmarks exist for dots yet; every capability claim so far is self-reported by OpenAI."
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "On September 29, 2026, at its DevDay 2026 conference in San Francisco, OpenAI launched dots — its first mainstream always-on AI agent product. Where ChatGPT answers one conversation at a time, a dot keeps working in the background: it has its own cloud computer, its own browser, and a standing set of goals you give it. It's OpenAI's clearest answer yet to the agentic-AI question this site has been tracking since [GPT-6 Astra's launch](/blog/gpt-6-astra-vs-claude-fable-5-1) earlier that same month."
+        },
+        {
+          "type": "paragraph",
+          "text": "I'm Ankush Rajput, an AI developer who builds agentic systems in production — RAG pipelines, LangChain agents, automation workflows. This is my read on whether dots is a genuine step change or a well-branded wrapper around capabilities GPT-6 Astra already had."
+        },
+        { "type": "heading", "text": "What Is ChatGPT Dots?" },
+        {
+          "type": "paragraph",
+          "text": "A dot is a persistent AI agent that lives inside your ChatGPT account, or your organization's. You create one, name it, and give it goals; from there it runs independently rather than waiting for you to type a prompt. Every dot is powered by [GPT-6 Astra](/blog/gpt-6-astra-vs-claude-fable-5-1), OpenAI's flagship model, and gets its own cloud computer and browser so it can actually operate software — not just suggest what you should click next."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through OpenAI's plugin ecosystem, a dot can connect to more than 4,000 apps, and it's reachable wherever you already work: ChatGPT itself, Slack, or Microsoft Teams, with SMS access reportedly coming. OpenAI's stated long-term vision is \"teams of dots\" — multiple agents coordinating on your behalf rather than one assistant handling everything alone."
+        },
+        { "type": "heading", "text": "How Dots Actually Work" },
+        {
+          "type": "paragraph",
+          "text": "Two details separate dots from a typical chat session. First, persistence: a dot keeps running after you close the tab, picking tasks back up as new information arrives instead of starting cold on your next message. Second, memory: it's designed to learn your preferences and context over time rather than forgetting everything between conversations. Early coverage highlighted a few concrete examples of what that looks like in practice:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "A developer sets a dot to monitor customer feedback channels and open fixes for recurring bugs without being asked each time.",
+            "A scientist has a dot automatically rerun an analysis the moment new experimental data lands.",
+            "An operations team runs several dots in parallel, each scoped to a different recurring workflow."
+          ]
+        },
+        { "type": "heading", "text": "Dots at a Glance" },
+        {
+          "type": "table",
+          "headers": ["", "Detail"],
+          "rows": [
+            ["Launched", "September 29, 2026, at OpenAI DevDay 2026"],
+            ["Powered by", "GPT-6 Astra"],
+            ["Included with", "ChatGPT Pro, Business Premium (first dot, no extra cost)"],
+            ["App connections", "4,000+ via OpenAI's plugin ecosystem"],
+            ["Access points", "ChatGPT, Slack, Microsoft Teams (SMS reportedly coming)"],
+            ["Availability", "Pro: eligible markets, excluding the EEA, Switzerland, and the UK. Business Premium: all supported ChatGPT regions. Enterprise/Edu/Healthcare: beta."],
+            ["Enterprise security", "Integrating with Microsoft Agent 365; individual dots can get distinct identities, credentials, and tool access"],
+            ["Additional-dot pricing", "Not yet published by OpenAI"]
+          ],
+          "caption": "Compiled from OpenAI's announcement and DevDay 2026 coverage as of October 2, 2026 — rollout, markets, and pricing for additional dots may change."
+        },
+        { "type": "heading", "text": "Pricing: What Dots Actually Cost" },
+        {
+          "type": "paragraph",
+          "text": "There's no separate \"dots\" price — the first dot is bundled into ChatGPT Pro or Business Premium, with extended usage limits for the first month that then taper off. Third-party trackers put Pro at roughly $100/month, a steep jump from the $20/month Plus tier for a single feature — one write-up called it \"[$960 a year extra for one feature whose limits get tighter after month one and whose add-ons have no price](https://www.eesel.ai/blog/openai-dots-pricing).\" OpenAI hasn't published what additional dots, or expanded usage beyond the included one, will cost."
+        },
+        { "type": "heading", "text": "Privacy and Memory: What to Know Before You Start" },
+        {
+          "type": "paragraph",
+          "text": "A dot's value depends on it remembering things about you and your work, which is also the part worth being careful with. As of launch, there's no interface to view, edit, or delete an individual dot's memories; the only full reset is deleting the dot entirely. Disconnecting a connected app doesn't erase what the dot already learned from it while it was connected. And unlike the benchmark-heavy rollout of GPT-6 Astra itself, OpenAI has published no independent evaluations, success rates, or benchmarks for how reliably dots actually complete the tasks they're given — every capability claim so far is self-reported."
+        },
+        { "type": "heading", "text": "Dots vs. Claude's Agentic Tools" },
+        {
+          "type": "paragraph",
+          "text": "Dots isn't OpenAI's only move in this direction, and it isn't happening in a vacuum. [Claude Fable 5.1](/blog/gpt-6-astra-vs-claude-fable-5-1), Anthropic's model from the same week as GPT-6 Astra, is explicitly positioned for \"long-horizon agentic work\" too — but Anthropic ships it as a model you build agents with via the API, not a packaged, branded agent product with its own avatar and app store. Dots is a closer analog to a persistent employee than to a raw model: it's a product decision about packaging and always-on persistence, layered on top of the same underlying model capabilities [compared in depth here](/blog/gpt-6-astra-vs-claude-fable-5-1). Which approach is more useful depends on whether you want a finished agent or the building blocks to make your own."
+        },
+        { "type": "heading", "text": "Should You Upgrade for Dots?" },
+        {
+          "type": "paragraph",
+          "text": "If you're already on ChatGPT Pro or Business Premium, trying your first dot costs nothing extra, and the use cases OpenAI highlights — recurring monitoring, repetitive multi-step workflows, always-on triage — are genuinely things people have wanted an unprompted AI assistant to do for years. Upgrading specifically to get a dot is a harder case: the price jump is steep outside the US-friendly framing, additional-dot costs are unknown, you can't yet audit what a dot remembers about you, and there's no independent data yet on how well it actually performs versus how well OpenAI says it performs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Worth trying if you already pay for Pro or Business Premium. Worth upgrading for alone — not yet, not until pricing and independent evaluation catch up to the pitch."
+        },
+        { "type": "heading", "text": "Related Reading" },
+        {
+          "type": "list",
+          "items": [
+            "[GPT-6 Astra vs Claude Fable 5.1: Which AI Model Is Better?](/blog/gpt-6-astra-vs-claude-fable-5-1) — the model every dot runs on, compared against Anthropic's equivalent"
+          ]
+        },
+        { "type": "heading", "text": "Sources" },
+        {
+          "type": "list",
+          "items": [
+            "[Introducing dots (OpenAI)](https://openai.com/index/introducing-dots/)",
+            "[OpenAI launches dots, its bubbly agentic avatar (TechCrunch)](https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/)",
+            "[OpenAI launches dots, always-on ChatGPT agents with their own computers (BetaNews)](https://betanews.com/article/openai-dots-agents-chatgpt/)",
+            "[OpenAI Dots pricing 2026: Pro, Business Premium, and real costs (eesel.ai)](https://www.eesel.ai/blog/openai-dots-pricing)",
+            "[OpenAI Dots review 2026: safety, speed, price, and who it fits (eesel.ai)](https://www.eesel.ai/blog/openai-dots-review)",
+            "[OpenAI DevDay recap (CNBC)](https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html)"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is ChatGPT dots?",
+          "a": "Dots are OpenAI's always-on AI agents, launched at DevDay 2026. Each dot runs on GPT-6 Astra, has its own cloud computer and browser, and keeps working on assigned goals in the background instead of waiting for a prompt."
+        },
+        {
+          "q": "What model powers dots?",
+          "a": "GPT-6 Astra, OpenAI's flagship model released September 3, 2026."
+        },
+        {
+          "q": "How much do dots cost?",
+          "a": "The first dot is included free with ChatGPT Pro or Business Premium. OpenAI hasn't published pricing for additional dots or expanded usage beyond the included one."
+        },
+        {
+          "q": "Is dots available outside the US?",
+          "a": "The Pro rollout excludes the European Economic Area, Switzerland, and the UK. Business Premium includes dots in all supported ChatGPT regions. Enterprise, Edu, and Healthcare workspaces can access a beta."
+        },
+        {
+          "q": "Can I delete what a dot remembers about me?",
+          "a": "Not selectively. There's no interface to view, edit, or delete individual memories — the only full reset is deleting the dot entirely, and disconnecting an app doesn't erase what it already learned."
+        },
+        {
+          "q": "How is dots different from Claude's agentic tools?",
+          "a": "Claude Fable 5.1 is a model Anthropic ships via API for you to build agents with. Dots is a finished, branded agent product from OpenAI — a persistent assistant with its own avatar and app connections, built on top of GPT-6 Astra."
+        },
+        {
+          "q": "Can I use dots through Slack or Teams?",
+          "a": "Yes — dots are reachable through ChatGPT, Slack, and Microsoft Teams, with SMS access reportedly coming."
+        },
+        {
+          "q": "Are there independent benchmarks for dots?",
+          "a": "Not yet. OpenAI hasn't published independent evaluations, success rates, or benchmarks for dots — every capability claim so far comes from OpenAI itself."
+        }
+      ]
+    },
+    {
       "slug": "gpt-6-astra-vs-claude-fable-5-1",
       "category": "AI Models",
       "title": "GPT-6 Astra vs Claude Fable 5.1: Which AI Model Is Better?",
@@ -51,6 +192,10 @@
         {
           "type": "paragraph",
           "text": "It's also the first OpenAI model to reach the \"Critical\" cybersecurity capability tier under the company's [Preparedness Framework](https://openai.com/index/safety-overview-gpt-6-astra/), which is why the most sensitive offensive-security features are restricted to vetted participants rather than shipped broadly on day one."
+        },
+        {
+          "type": "paragraph",
+          "text": "Astra's real-world debut came a few weeks later: at DevDay 2026, OpenAI launched [dots](/blog/chatgpt-dots-explained), its always-on agent product, built entirely on top of this model. I've written a full breakdown of [what ChatGPT dots actually does, what it costs, and what to watch out for](/blog/chatgpt-dots-explained) if you want to see Astra applied to a shipping product rather than just benchmarks."
         },
         { "type": "heading", "text": "Claude Fable 5.1 Overview" },
         {
